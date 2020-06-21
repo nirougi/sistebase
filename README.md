@@ -1,9 +1,9 @@
 # <img src="static/logo.svg?sanitize=true" alt="SisteBase" width="400" style="max-width:100%;">
 
-SisteBase es el un proyecto que unifica diferentes herramientas para la producciónd de un sistema de diseño basado en componentes.
-Fue creado como ejemplo para la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
+**SisteBase** es un proyecto que unifica diferentes herramientas para crear un sistema de diseño basado en componentes.
+Está basado en el trabajo que hacemos en [Obelisco](https://github.com/gcba/Obelisco) y lo usé como ejemplo en la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
 
-Mirá ver la [lista de componentes](https://gcba.github.io/sistebase).
+Mirá la [lista de componentes](https://jinik.github.io/sistebase).
 
 <!--
 ## Uso (Esto es mentira porque todavía no está publicado)
