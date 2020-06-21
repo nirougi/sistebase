@@ -2,15 +2,15 @@
 
 El seguimiento y planificación del proyecto se puede seguir en [este tablero](https://github.com/Jinik/sistebase/projects/1).
 
-Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir con aguna de estas acciones.
+Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir con alguna de estas acciones.
 
 ## 1. Pedir un caso de uso nuevo
 
 Si estás trabajando con SisteBase y tenés un caso de uso que no está contemplado, o ninguno de los componentes que existen se adapta bien a la necesidad, seguí estos pasos:
 
-**Primero**: [Buscá en las tareas de pedidos](https://github.com/Jinik/sistebase/issues) para entender si ya está identificado ese caso en la planificación.
+**Primero**: [Buscá en las tareas de pedidos](https://github.com/Jinik/sistebase/labels/pedido) para entender si ya está identificado ese caso en la planificación.
 
-- **Si no lo encontrás**, [creá un nuevo issue](https://github.com/Jinik/sistebase/issues) explicando la necesidad. (Usá el temlpate para pedir nuevos componentes).
+- **Si no lo encontrás**, [creá un nuevo issue](https://github.com/Jinik/sistebase/issues/new?assignees=&labels=pedido&template=pedido.md&title=) explicando la necesidad. (Usá el temlpate para pedir nuevos componentes).
 
 - **Si ya existe**, comentá tu caso o dejanos tu feedback reaccionando con un :thumbsup: .
 
@@ -18,9 +18,9 @@ Si estás trabajando con SisteBase y tenés un caso de uso que no está contempl
 
 Si encontrás un error en alguno de los componentes o alguna mejora que impacte en la usabilidad, accesibilidad o rendimiento, seguí estos pasos:
 
-**Primero**: [Buscá en las tareas de errores](https://github.com/Jinik/sistebase/issues) para entender si ya fue reportado.
+**Primero**: [Buscá en las tareas de errores](https://github.com/Jinik/sistebase/labels/error) para entender si ya fue reportado.
 
-- **Si no lo encontrás**, [creá un nuevo issue](https://github.com/Jinik/sistebase/issues) el error o mejora. (Usá el temlpate para reportar errores de componentes).
+- **Si no lo encontrás**, [creá un nuevo issue](https://github.com/Jinik/sistebase/issues/new?assignees=&labels=error&template=error.md&title=) el error o mejora. (Usá el temlpate para reportar errores de componentes).
 
 - **Si ya existe**, comentá tu caso o dejanos tu feedback reaccionando con un :thumbsup: .
 

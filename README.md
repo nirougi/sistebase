@@ -3,7 +3,7 @@
 SisteBase es el un proyecto que unifica diferentes herramientas para la producciónd de un sistema de diseño basado en componentes.
 Fue creado como ejemplo para la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
 
-Podés ver el [Lista de componentes](https://gcba.github.io/sistebase).
+Mirá ver la [lista de componentes](https://gcba.github.io/sistebase).
 
 <!--
 ## Uso (Esto es mentira porque todavía no está publicado)
@@ -23,6 +23,7 @@ Una vez que tengas el proyecto clonado, tenés que:
 2. Chromatic genera un token para ese proyecto que permite subir los cambios. En la sección `secrets` de la configuración de github del repo, agregá uno con el nombre `CHROMATIC_PROJECT_TOKEN` y el token que te dio Chromatic.
 3. Habilitá la **Github page** del proyecto dentro de las opciones del proyecto, ahí se va a publicar el sistema con los diferentes componentes. Para que esto funcione el proyecto tiene que se público.
 4. Manos a la obra, ya podés empezar a definir tus estilos y componentes.
+
 
 ## Desarrollo
 SisteBase está desarrollado principalmente en [Sass](https://sass-lang.com) y [TypeScript](http://typescriptlang.org/), utilizando las siguientes herramientas:
@@ -48,6 +49,7 @@ npm start
 ### Recomendaciones
 
 Es recomandable utilizar [VScode](https://code.visualstudio.com) como editor de código con las extensiones de [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Stylelint](https://marketplace.visualstudio.com/items?itemName=Daosro.stylelint) y [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) para asegurarse que los estilos del código sigan las convenciones.
+
 
 ## Integración continua
 

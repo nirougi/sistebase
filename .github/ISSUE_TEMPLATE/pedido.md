@@ -1,5 +1,5 @@
 ---
-name: Pedido
+name: Pedido de caso no contemplado
 about: Compartinos el caso que necesitas
 title: ''
 labels: pedido
