@@ -2,7 +2,7 @@
 SisteBase es el un proyecto que unifica diferentes herramientas para la producciónd de un sistema de diseño basado en componentes.
 Fue creado como ejemplo para la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
 
-Podés ver el [Lista de componentes](https://gcba.github.io/sistebase/).
+Podés ver el [Lista de componentes](https://jinik.github.io/sistebase/).
 
 <!--
 ## Uso (Esto es mentira porque todavía no está publicado)
