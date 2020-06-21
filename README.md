@@ -1,4 +1,5 @@
-# SisteBase
+# <img src="static/logo.svg?sanitize=true" alt="SisteBase" width="400" style="max-width:100%;">
+
 SisteBase es el un proyecto que unifica diferentes herramientas para la producciónd de un sistema de diseño basado en componentes.
 Fue creado como ejemplo para la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
 
