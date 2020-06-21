@@ -41,7 +41,7 @@ Es recomandable utilizar [VScode](https://code.visualstudio.com/) como editor de
 
 ## Integración continua
 
-![Deploy storybook](https://github.com/gcba/SisteBase/workflows/Deploy%20storybook/badge.svg?branch=master)
+![Deploy storybook](https://github.com/Jinik/sistebase/workflows/Deploy%20storybook/badge.svg)
 
 SisteBase tiene tests automáticos e integración continua.
 Cada vez que se genera un nuevo PR, se corren los siguientes procesos:
