@@ -1,0 +1,4 @@
+dist
+node_modules
+.storybook-out
+**/.DS_Store
