@@ -1,0 +1,34 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+
+<!-- Component -->
+import { Button } from "."
+import "./button.stories.scss";
+
+<Meta
+  title="Átomos|Botón/Accesibilidad"
+  component={Button}
+  decorators={[withA11y]} />
+
+
+# Consideraciones de accesibilidad
+
+- Las interacciones de los botones en el sistema de diseño de Obelisco se implementan utilizando la etiqueta de `<button>` como elemento sobre el HTML5.
+- Los elementos interactivos como se incluyen en el orden de tabulación. Cuando un botón tiene el foco, tanto la **Barra Espaciadora** y el **Enter** activarán el botón (a menos que esté deshabilitado).
+- El contraste de color en los botones está diseñado para que siempre sea mayor a `4.5.1` cumpliendo con los requerimientos para entes gubernamentales.
+
+## Aria labels
+
+La etiqueta de un botón puede estar escrita como `<button>` o proporcionada por el atributos `role="button"`. El atributo `aria-describedby` puede proporcionar información adicional sobre el botón.
+
+Usar la propiedad `aria-disabled` para marcar como desabilitado el estado del botón. Esto previene que sea interactivo y transmite su estado inactivo a tecnologías de asistencia.
+
+<Preview>
+  <Story name="Aria labels">
+    <div className="buttons-container">
+        <span class="btn btn-secondary" role="button"  tabindex="0">Div con aria labels</span>
+        <span class="btn btn-secondary disabled" role="button"  tabindex="0" aria-disabled>Div con aria labels</span>
+    </div>
+  </Story>
+</Preview>

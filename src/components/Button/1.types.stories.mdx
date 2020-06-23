@@ -1,0 +1,146 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+import { withXD } from "storybook-addon-xd-designs";
+
+<!-- Component -->
+import { Button } from "."
+import "./button.stories.scss";
+
+<Meta
+  title="Átomos|Botón/Tipos de botón"
+  component={Button}
+  decorators={[withA11y, withXD]} />
+
+
+# Botones
+
+Para las aplicaciones web debe utilizarse BAstrap.
+
+## Botón primario
+
+<Preview>
+  <Story name="Botón principal">
+    <div className="buttons-container">
+      <Button type="primary">Default</Button>
+      <Button type="primary" className="hover">Hover</Button>
+      <Button type="primary" className="active">Activo</Button>
+      <Button type="primary" className="focus">Con foco</Button>
+      <Button type="primary" disabled={true}>Deshabilitado</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+- Los botones primarios se usan principalmente para acciones principales.
+- El texto de los botones deben indicar claramente la acción del botón. Use verbos activos, como **Agregar** o **Guardar**. Es posible que deba incluir más o diferentes palabras para describir mejor la acción. Por ejemplo, 'Agregar otra dirección' y 'Guardar cambios'. En este tipo de casos la recomendación es de no exceder las tres palabras.
+
+> Verbos para indicar una acción principal:
+>
+> Aplicar, Actualizar, Adjuntar, Agregar, Aprender, Buscar, Cerrar, Copiar, Crear, Comenzar, Compartir, Continuar, Confirmar, Descargar, Editar, Enviar' Exportar, Filtrar, Finalizar, Guardar, Importar, Iniciar, Insertar, Imprimir, Mover, Ordenar, Registrar, Replicar, Restaurar, Seleccionar, Ver, etc...
+
+### ¿Cómo se usan?
+
+- Evite usar varios botones primarios en una sola página, Tener más de un llamado a la acción principal reduce su impacto y dificulta que los usuarios sepan qué hater a continuación.
+- No deben haber varios botones primarios en un mismo grupo de botones, Cualquier llamada a la acción restante debe representarse como botones secundarios
+- No use botones como elementos de navegación. En su lugar, use **enlaces** cuando la acción deseada sea llevar al usuario a una nueva página.
+- Para conjuntos de botones, **use textos específicos**, Por ejemplo en el caso de un formulario: Volver (secundario) y Siguiente (primario)
+
+### Orden
+
+- Los botones primarios siempre aparecen a la derecha, Los botones secundarios aparecen a la izquierda del botón primario. Mantener esta consistencia en los productos es crucial para el usuario. Esta es la orientación requerida y debe seguirse en todo momento.
+
+### Alineación
+
+- Cuando la acción principal implica un paso de navegación hacia adelante, como en un formularia **justifique los botones a la derecha**, ya sea individuales o grupos de botones (secundarios / primarios). Esta posición transmite la intención del "siguiente paso".
+
+
+## Botón secundario
+
+<Preview>
+  <Story name="Botón secundario">
+    <div className="buttons-container">
+      <Button type="secondary">Default</Button>
+      <Button type="secondary" className="hover">Hover</Button>
+      <Button type="secondary" className="active">Activo</Button>
+      <Button type="secondary" className="focus">Con foco</Button>
+      <Button type="secondary" disabled={true}>Deshabilitado</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+- Use botones secundarias para llamadas secundarias a la acción en una página.
+- Las páginas con demasiadas llamadas a la acción dificultan que los usuarios sepan qué hacer a continuación. Antes de agregar muchos botones secundarios, intente simplificar la página 0 dividir el contenido en varias páginas,
+- Puede usar botones secundarios en combinación ton botones predeterminados,
+
+
+## Enlaces tipo botón
+
+<Preview>
+  <Story name="Botón tipo enlace">
+    <div className="buttons-container">
+      <Button type="link">Default</Button>
+      <Button type="link" className="hover">Hover</Button>
+      <Button type="link" className="active">Activo</Button>
+      <Button type="link" className="focus">Con foco</Button>
+      <Button type="link" disabled={true}>Deshabilitado</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+- Los enlates se usan como **elementos de navegación**. Demasiados enlaces saturarán una página y dificultarán a los usuarios la identificación de sus próximos pasos. Deben usarse con moderación.
+- Use enlaces cuando la acción deseada sea llevar al usuario a una nueva página. Cuando la página es externa siempre se usa el ícono acompañando el enlace, indicando que se abrirá en una nueva pestaña.
+
+
+## Botón de peligro
+
+<Preview>
+  <Story name="Botón de peligro">
+    <div className="buttons-container">
+      <Button type="danger">Default</Button>
+      <Button type="danger" className="hover">Hover</Button>
+      <Button type="danger" className="active">Activo</Button>
+      <Button type="danger" className="focus">Con foco</Button>
+      <Button type="danger" disabled={true}>Deshabilitado</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+- Los botones de peligro tienen un estilo visual diferente ya que están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son **acciones permanentes y destructivas** que no pueden deshacerse,
+- Al permitir que los usuarios realicen acciones como esta, se debe incluir un paso adicional que les pida confirmación. Por ejemplo. se puede crear un botón de "Elminar cuenta" pero cuando el usuario haga clic alli se abrirá un modal de confirmación en el que aparecerá el botón de peligro.
+- El estilo de botón para la llamada inicial a la acción puede ser primario ó secundario y el botón de **advertencia final** para la confirmación es el botón de peligro.
+
+### ¿Dónde los uso?
+
+- Modales de confirmación
+
+
+## Botón de éxito
+
+<Preview>
+  <Story name="Botón de éxito">
+    <div className="buttons-container">
+      <Button type="success">Default</Button>
+      <Button type="success" className="hover">Hover</Button>
+      <Button type="success" className="active">Activo</Button>
+      <Button type="success" className="focus">Con foco</Button>
+      <Button type="success" disabled={true}>Deshabilitado</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+- Los botones de éxito tienen un estilo visual diferente para avisarle al usuario que esta en el último paso antes de recibir una respuesta por parte del sistema 0 completar una navegación.
+
+### ¿Dónde los uso?
+
+- Último paso de un formulario
+- Finalización de un registro

@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -s ./static -p 6006",
+    "docs": "start-storybook -s ./static -p 6007 --docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint:typescript": "eslint --debug --ext .ts,.tsx . --fix",
     "lint:sass": "stylelint '**/*.{css,scss,sass}' --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:sass": "sass src/scss/:dist/",
-    "build:storybook": "build-storybook -s ./static -c .storybook -o .storybook-out"
+    "build:storybook": "build-storybook -s ./static -c .storybook -o .storybook-out",
+    "build:docs": "build-storybook -s ./static -c .storybook -o .storybook-out --docs"
   },
   "author": "",
   "license": "MIT",

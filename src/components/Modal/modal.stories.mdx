@@ -1,0 +1,68 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+import { withXD } from "storybook-addon-xd-designs";
+import { action } from "@storybook/addon-actions";
+
+<!-- Component -->
+import { Modal } from ".";
+import { Button } from "../Button";
+import "./modal.stories.scss";
+
+<Meta
+  title="Átomos|Modal"
+  component={Modal}
+  decorators={[withA11y, withXD]} />
+
+
+# Modal
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos nostrum, omnis ullam provident debitis eveniet dolore cumque iure iusto, quisquam ab facere molestiae, unde repellendus? Explicabo consequuntur laboriosam quasi.
+
+## Texto
+
+<Preview className="modal-preview">
+  <Story name="Texto">
+    <div class="docs-modal-container">
+      <Modal
+        title="Ejemplo de modal"
+        visible={true}
+        onClose={action("modal-close")}
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui odio
+          sint quos placeat ipsa quaerat vero illum eligendi laboriosam? Neque in,
+          commodi accusantium sit corporis temporibus voluptatibus assumenda
+          tenetur!
+        </p>
+      </Modal>
+    </div>
+  </Story>
+</Preview>
+
+
+## Con footer
+
+<Preview className="modal-preview">
+  <Story name="Footer">
+    <div class="docs-modal-container">
+      <Modal
+        title="Ejemplo de modal"
+        visible={true}
+        footer={
+          <Button type="primary" onClick={action("footer-click")}>
+            Qué lindo mi footer
+          </Button>
+        }
+        onClose={action("modal-close")}
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui odio
+          sint quos placeat ipsa quaerat vero illum eligendi laboriosam? Neque in,
+          commodi accusantium sit corporis temporibus voluptatibus assumenda
+          tenetur!
+        </p>
+      </Modal>
+    </div>
+  </Story>
+</Preview>

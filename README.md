@@ -19,10 +19,10 @@ npm install --save sistebase
 Podés usar este proyecto como un template con el botón verde que aparece arriba.
 Una vez que tengas el proyecto clonado, tenés que:
 
-1. Crear tu cuenta en [chromatic](https://www.chromatic.com) y crear el proyecto basado en ese repositorio.
-2. Chromatic genera un token para ese proyecto que permite subir los cambios. En la sección `secrets` de la configuración de github del repo, agregá uno con el nombre `CHROMATIC_PROJECT_TOKEN` y el token que te dio Chromatic.
+1. **Crear tu cuenta en [chromatic](https://www.chromatic.com)** y crear el proyecto basado en ese repositorio.
+2. Chromatic genera un token para ese proyecto que permite subir los cambios. En la sección `secrets` de la configuración de github del repo, **agregá uno con el nombre `CHROMATIC_PROJECT_TOKEN` y el token que te dio Chromatic**.
 3. Habilitá la **Github page** del proyecto dentro de las opciones del proyecto, ahí se va a publicar el sistema con los diferentes componentes. Para que esto funcione el proyecto tiene que se público.
-4. Manos a la obra, ya podés empezar a definir tus estilos y componentes.
+4. **Manos a la obra**, ya podés empezar a definir tus estilos y componentes.
 
 
 ## Desarrollo

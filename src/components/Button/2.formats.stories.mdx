@@ -1,0 +1,50 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+import { withXD } from "storybook-addon-xd-designs";
+
+<!-- Component -->
+import { Button } from "."
+import "./button.stories.scss";
+import { sizes } from "../utils";
+
+<Meta
+  title="Átomos|Botón/Formatos"
+  component={Button}
+  decorators={[withA11y, withXD]} />
+
+
+# Formatos de botones
+
+Dependiendo el contexto, puede necesitarse que el botón se ajuste de forma diferente al contexto.
+Estas son algunas de las transformaciones que pueden realizarse.
+
+## Tamaños
+
+<Preview>
+  <Story name="Tamaños">
+    <div className="buttons-container">
+        <Button type="secondary" size="small">Chico</Button>
+        <Button type="secondary">Normal</Button>
+        <Button type="secondary" size="large">Grande</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos nostrum, omnis ullam provident debitis eveniet dolore cumque iure iusto, quisquam ab facere molestiae, unde repellendus? Explicabo consequuntur laboriosam quasi.
+
+## Expandible
+
+<Preview>
+  <Story name="Expandible">
+    <div className="buttons-container">
+        <Button type="secondary" block={true}>Expandible</Button>
+    </div>
+  </Story>
+</Preview>
+
+### ¿Cuándo usarlos?
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos nostrum, omnis ullam provident debitis eveniet dolore cumque iure iusto, quisquam ab facere molestiae, unde repellendus? Explicabo consequuntur laboriosam quasi.

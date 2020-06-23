@@ -1,0 +1,46 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+import { withXD } from "storybook-addon-xd-designs";
+import { action } from "@storybook/addon-actions";
+
+<!-- Component -->
+import { Login } from ".";
+import { Modal } from "../../Modal";
+import { Button } from "../../Button";
+
+<Meta
+  title="Patrones|Login"
+  component={Login}
+  decorators={[withA11y, withXD]} />
+
+
+# Login
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos nostrum, omnis ullam provident debitis eveniet dolore cumque iure iusto, quisquam ab facere molestiae, unde repellendus? Explicabo consequuntur laboriosam quasi.
+
+## Básico
+
+<Preview>
+  <Story name="Básico">
+    <Login onSubmit={action("login-submit")} />
+  </Story>
+</Preview>
+
+
+## Con modal
+
+<Preview className="modal-preview">
+  <Story name="Con modal">
+    <div class="docs-modal-container">
+      <Modal
+        title="Ingresá al sitio"
+        visible={true}
+        size="small"
+        onClose={action("modal-close")}
+      >
+        <Login onSubmit={action("login-submit")} />
+      </Modal>
+    </div>
+  </Story>
+</Preview>

@@ -1,0 +1,55 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+import { withXD } from "storybook-addon-xd-designs";
+import { action } from "@storybook/addon-actions";
+
+<!-- Component -->
+import { Input } from ".";
+
+<Meta
+  title="Átomos|Input/Tipos de input"
+  component={Input}
+  decorators={[withA11y, withXD]} />
+
+
+# Inputs
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos nostrum, omnis ullam provident debitis eveniet dolore cumque iure iusto, quisquam ab facere molestiae, unde repellendus? Explicabo consequuntur laboriosam quasi.
+
+## Texto
+
+<Preview>
+  <Story name="Texto">
+    <Input
+    type="text"
+    label="Texto"
+    onChange={action("input-change")} />
+  </Story>
+</Preview>
+
+
+## Contraseña
+
+<Preview>
+  <Story name="Contraseña">
+    <Input
+      type="password"
+      label="Contraseña"
+      value="contraseña"
+      onChange={action("input-change")} />
+  </Story>
+</Preview>
+
+
+## Número
+
+<Preview>
+  <Story name="Número">
+    <Input
+      type="number"
+      label="Número"
+      value="12345"
+      onChange={action("input-change")} />
+  </Story>
+</Preview>

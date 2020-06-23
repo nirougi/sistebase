@@ -28,7 +28,7 @@ jobs:
           buildScriptName: build:storybook
 
       - name: Build
-        run: npm run build:storybook
+        run: npm run build:docs
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
