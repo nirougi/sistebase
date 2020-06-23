@@ -11,6 +11,5 @@ body {
   justify-content: center;
 }
 
-// svg.sidebar-svg-icon path {
-//   fill: #fdd306 !important;
-// }
+@import "../src/components/Button/button.stories.scss";
+@import "../src/components/Modal/modal.stories.scss";
