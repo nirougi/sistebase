@@ -11,5 +11,37 @@ body {
   justify-content: center;
 }
 
-@import "../src/components/Button/button.stories.scss";
-@import "../src/components/Modal/modal.stories.scss";
+// Buttons
+
+.docs-buttons-wrapper .btn {
+  margin: 6px 12px;
+}
+
+.docs-button-block-wrapper {
+  width: 300px;
+  text-align: center;
+}
+
+// Modals
+
+.sbdocs-preview {
+  &.modal-preview > div > div {
+    padding: 0;
+    > div {
+      margin: 0;
+    }
+  }
+
+  .docs-modal-wrapper {
+    height: 350px;
+
+    .modal {
+      overflow-y: auto;
+    }
+
+    .modal-backdrop {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
