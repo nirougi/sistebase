@@ -40,9 +40,6 @@ jobs:
           BRANCH: gh-pages
           FOLDER: .storybook-out
 
-      - name: Debug
-        run: ls
-
       - name: Release
         run: npm run release
         env:
