@@ -28,11 +28,17 @@ jobs:
           buildScriptName: build:storybook
 
       - name: Build
-        run: npm run build:docs
+        run: |
+          npm run build:typescript
+          npm run build:sass
+          npm run build:docs
 
-      - name: Deploy
+      - name: Publish docs
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: .storybook-out
+
+      - name: Release
+        run: npm run release
