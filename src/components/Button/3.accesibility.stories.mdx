@@ -13,21 +13,21 @@ import { Button } from ".";
 
 # Consideraciones de accesibilidad
 
-- Las interacciones de los botones en el sistema de diseño de Obelisco se implementan utilizando la etiqueta de `<button>` como elemento sobre el HTML5.
-- Los elementos interactivos como se incluyen en el orden de tabulación. Cuando un botón tiene el foco, tanto la **Barra Espaciadora** y el **Enter** activarán el botón (a menos que esté deshabilitado).
-- El contraste de color en los botones está diseñado para que siempre sea mayor a `4.5.1` cumpliendo con los requerimientos para entes gubernamentales.
+- Es necesario respetar las etiquetas semánticas, por lo que deben utilizarsen la etiqueta `<button>`.
+- Deben respetarse los valores mínimos de contraste y tamaño mínimo en de la tipografía.
+- Deben responder a la navegación e interacción con el teclado.
 
 ## Aria labels
 
-La etiqueta de un botón puede estar escrita como `<button>` o proporcionada por el atributos `role="button"`. El atributo `aria-describedby` puede proporcionar información adicional sobre el botón.
-
-Usar la propiedad `aria-disabled` para marcar como desabilitado el estado del botón. Esto previene que sea interactivo y transmite su estado inactivo a tecnologías de asistencia.
+La etiqueta de un botón puede estar escrita como `<button>` o proporcionada por el atributos `role="button"`.
+Usar la propiedad `aria-disabled` para marcar como desabilitado el estado del botón.
 
 <Preview>
   <Story name="Aria labels">
     <div className="docs-buttons-wrapper">
-        <span class="btn btn-secondary" role="button"  tabindex="0">Div con aria labels</span>
-        <span class="btn btn-secondary disabled" role="button"  tabindex="0" aria-disabled>Div con aria labels</span>
+        <span class="btn btn-secondary" role="button"  tabindex="0">Span con role=button</span>
+        <span class="btn btn-secondary active" role="button"  tabindex="0" aria-pressed>Span con role=button y aria-pressed</span>
+        <span class="btn btn-secondary disabled" role="button"  tabindex="0" aria-disabled>Span con role=button y aria-disabled</span>
     </div>
   </Story>
 </Preview>
