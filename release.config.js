@@ -9,7 +9,7 @@ module.exports = {
     [
       "@semantic-release/github",
       {
-        assets: ["dist/**", "LICENSE", "README.md"]
+        assets: ["dist/**", "LICENSE", "README.md", "package.json"]
       }
     ]
   ]
