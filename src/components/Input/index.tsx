@@ -1,6 +1,6 @@
 import * as React from "react";
-import { InputType } from "../utils";
 import * as _ from "lodash";
+import { InputType } from "../utils";
 
 export interface InputProps {
   type: InputType;
