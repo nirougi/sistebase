@@ -2,7 +2,8 @@
   "name": "sistebase",
   "version": "1.0.0",
   "description": "Proyecto de ejemplo para sistemas de diseño de componentes.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": ["dist"],
   "scripts": {
     "start": "start-storybook -s ./static -p 6006",
     "docs": "start-storybook -s ./static -p 6007 --docs",

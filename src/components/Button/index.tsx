@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ColorType, Size, sizeToClass } from "../utils";
 
-export interface ButtonProps {
+export default interface ButtonProps {
   type?: ColorType;
   size?: Size;
   block?: boolean;
