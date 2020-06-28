@@ -9,7 +9,8 @@ import { Button } from ".";
 <Meta
   title="Átomos|Botón/Tipos de botón"
   component={Button}
-  decorators={[withA11y, withXD]} />
+  decorators={[withA11y, withXD]}
+  parameters={{ design: { artboardUrl: "https://xd.adobe.com/view/75e1e49f-d476-412e-71d4-628872af84a8-03d0/screen/fb0491cc-b7f3-4090-9b82-d1026e1fe0a8/Types" } }} />
 
 
 # Botones
@@ -28,8 +29,7 @@ El texto de los botones debe indicar claramente la acción. Use verbos activos, 
 <Preview>
   <Story name="Botón principal">
     <div className="docs-buttons-wrapper">
-      <Button type="primary">Default</Button>
-      <Button type="primary" className="hover">Hover</Button>
+      <Button type="primary">Normal</Button>
       <Button type="primary" className="active">Activo</Button>
       <Button type="primary" className="focus">Con foco</Button>
       <Button type="primary" disabled={true}>Deshabilitado</Button>
@@ -66,8 +66,7 @@ El texto de los botones debe indicar claramente la acción. Use verbos activos, 
 <Preview>
   <Story name="Botón secundario">
     <div className="docs-buttons-wrapper">
-      <Button type="secondary">Default</Button>
-      <Button type="secondary" className="hover">Hover</Button>
+      <Button type="secondary">Normal</Button>
       <Button type="secondary" className="active">Activo</Button>
       <Button type="secondary" className="focus">Con foco</Button>
       <Button type="secondary" disabled={true}>Deshabilitado</Button>
@@ -87,9 +86,7 @@ El texto de los botones debe indicar claramente la acción. Use verbos activos, 
 <Preview>
   <Story name="Botón tipo enlace">
     <div className="docs-buttons-wrapper">
-      <Button type="link">Default</Button>
-      <Button type="link" className="hover">Hover</Button>
-      <Button type="link" className="active">Activo</Button>
+      <Button type="link">Normal</Button>
       <Button type="link" className="focus">Con foco</Button>
       <Button type="link" disabled={true}>Deshabilitado</Button>
     </div>
@@ -107,8 +104,7 @@ El texto de los botones debe indicar claramente la acción. Use verbos activos, 
 <Preview>
   <Story name="Botón de peligro">
     <div className="docs-buttons-wrapper">
-      <Button type="danger">Default</Button>
-      <Button type="danger" className="hover">Hover</Button>
+      <Button type="danger">Normal</Button>
       <Button type="danger" className="active">Activo</Button>
       <Button type="danger" className="focus">Con foco</Button>
       <Button type="danger" disabled={true}>Deshabilitado</Button>
@@ -132,8 +128,7 @@ El texto de los botones debe indicar claramente la acción. Use verbos activos, 
 <Preview>
   <Story name="Botón de éxito">
     <div className="docs-buttons-wrapper">
-      <Button type="success">Default</Button>
-      <Button type="success" className="hover">Hover</Button>
+      <Button type="success">Normal</Button>
       <Button type="success" className="active">Activo</Button>
       <Button type="success" className="focus">Con foco</Button>
       <Button type="success" disabled={true}>Deshabilitado</Button>

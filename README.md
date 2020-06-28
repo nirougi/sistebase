@@ -1,5 +1,9 @@
 # <img src="static/logo.svg?sanitize=true" alt="SisteBase" width="400" style="max-width:100%;">
 
+![Deploy storybook](https://github.com/Jinik/sistebase/workflows/Deploy%20storybook/badge.svg)
+![Versión de npm](https://img.shields.io/npm/v/sistebase)
+![Licencia MIT](https://img.shields.io/npm/l/sistebase?label=licencia)
+
 **SisteBase** es un proyecto que unifica diferentes herramientas para crear un sistema de diseño basado en componentes.
 Está basado en el trabajo que hacemos en [Obelisco](https://github.com/gcba/Obelisco) y lo usé como ejemplo en la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
 
@@ -52,8 +56,6 @@ Es recomandable utilizar [VScode](https://code.visualstudio.com) como editor de 
 
 
 ## Integración continua
-
-![Deploy storybook](https://github.com/Jinik/sistebase/workflows/Deploy%20storybook/badge.svg)
 
 SisteBase tiene tests automáticos e integración continua.
 Cada vez que se genera un nuevo PR, se corren los siguientes procesos:
