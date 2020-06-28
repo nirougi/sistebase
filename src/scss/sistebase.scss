@@ -16,11 +16,9 @@ $gray: #8f9899;
 
 $primary: $blue;
 $secondary: $gray;
-// $success: $green;
-// $info: $orange;
+$success: $green;
+$info: $orange;
 $warning: $orange;
 $danger: $red;
-// $light: $gray-100;
-// $dark: $gray-800;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
