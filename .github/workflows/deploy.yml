@@ -21,7 +21,7 @@ jobs:
         run: npm run lint:typescript && npm run lint:sass
 
       - name: Upload to Chromatic
-        uses: chromaui/action@releases/v1
+        uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
