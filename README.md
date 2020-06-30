@@ -7,16 +7,16 @@
 **SisteBase** es un proyecto que unifica diferentes herramientas para crear un sistema de diseño basado en componentes.
 Está basado en el trabajo que hacemos en [Obelisco](https://github.com/gcba/Obelisco) y lo usé como ejemplo en la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
 
-Mirá la [lista de componentes](https://jinik.github.io/sistebase).
+Mirá la [documentación de componentes](https://jinik.github.io/sistebase).
 
-<!--
-## Uso (Esto es mentira porque todavía no está publicado)
+
+## Cómo usarlo
 
 SisteBase está publicado en npm, por lo que se puede instalar de la siguiente forma:
 ```
 npm install --save sistebase
 ```
--->
+
 
 ## Usar como template
 
@@ -25,8 +25,9 @@ Una vez que tengas el proyecto clonado, tenés que:
 
 1. **Crear tu cuenta en [chromatic](https://www.chromatic.com)** y crear el proyecto basado en ese repositorio.
 2. Chromatic genera un token para ese proyecto que permite subir los cambios. En la sección `secrets` de la configuración de github del repo, **agregá uno con el nombre `CHROMATIC_PROJECT_TOKEN` y el token que te dio Chromatic**.
-3. Habilitá la **Github page** del proyecto dentro de las opciones del proyecto, ahí se va a publicar el sistema con los diferentes componentes. Para que esto funcione el proyecto tiene que se público.
-4. **Manos a la obra**, ya podés empezar a definir tus estilos y componentes.
+3. Para que los cambios se publiquen en NPM, tenés que [crearte una cuenta](https://www.npmjs.com/) y generar un token con **permisos de lectura y escritura**. En los secrets del repositorio, agregá otro con el nombre `NPM_TOKEN` y el token que generaste.
+4. Habilitá la **Github page** dentro de las opciones del proyecto, ahí se va a publicar la documentación. Para que esto funcione el proyecto tiene que se público.
+5. **Manos a la obra**, ya podés empezar a definir tus estilos y componentes.
 
 
 ## Desarrollo
@@ -69,6 +70,25 @@ Al hacer el merge en la branch `master` se corre el siguiente proceso:
 2. Corre las pruebas automáticas para chequear que pasen.
 3. Genera el build de la nueva versión.
 4. Publica los cambios en github pages.
+5. Sube la nueva versión a **npm**.
+
+
+## Versionado y publicación
+
+Para el manejo de versiones usamos [semantic release](https://github.com/semantic-release/semantic-release).
+Esto nos permite olvidarnos de definir las versiones y remueve la discreción de las emociones humanas, siguiendo estrictamente la especificación del [versionado semántico](https://semver.org/).
+
+Cada vez que se agregan commits, se ejecuta como parte de la integración contínua y lee los mensajes para definir el nuevo número de versión.
+**Todos los commits deben tener alguno de estos prefijos** que ayudan a identificar qué tipo de cambios hacen.
+
+- **feat**: Una nueva funcionalidad
+- **fix**: Arregla un error
+- **docs**: Cambios únicamente en la documentación
+- **style**: Cambios que no afectan la funcionalidad del código (espacios, formato, agrega puntos y coma, etc). **No confundir con cambios en el css.**
+- **refactor**: Un cambio de código que no agrega funcionalidades ni arregla errores
+- **perf**: Cambios que mejoran la performance
+- **test**: Cambios únicamente en los tests
+- **chore**: Cambios en el proceso de build o herramientas auxiliares que no hacen a las funcionalidades del sistema
 
 
 ## Colaboración

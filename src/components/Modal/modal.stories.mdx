@@ -29,7 +29,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati cu
       <Modal
         title="Ejemplo de modal"
         visible={true}
-        onClose={action("modal-close")}
+        onClose={action("onClose")}
       >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui odio
@@ -54,11 +54,11 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet velit eaque natus
         title="Ejemplo de modal"
         visible={true}
         footer={
-          <Button type="primary" onClick={action("footer-click")}>
+          <Button type="primary" onClick={action("onClick")}>
             Qué lindo mi footer
           </Button>
         }
-        onClose={action("modal-close")}
+        onClose={action("onClose")}
       >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui odio
