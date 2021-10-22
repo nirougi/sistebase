@@ -5,7 +5,7 @@
 ![Licencia MIT](https://img.shields.io/npm/l/sistebase?label=licencia)
 
 **SisteBase** es un proyecto que unifica diferentes herramientas para crear un sistema de diseño basado en componentes.
-Está basado en el trabajo que hacemos en [Obelisco](https://github.com/gcba/Obelisco) y lo usé como ejemplo en la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires.
+Está basado en el trabajo que hacemos en [Obelisco](https://github.com/gcba/Obelisco) y lo usé como ejemplo en la charla que di sobre sistemas de diseño en la meetup de React en Buenos Aires y en [Nerdear.la 2021](https://www.youtube.com/watch?v=MS_g_2NQhaU).
 
 Mirá la [documentación de componentes](https://nirougi.github.io/sistebase).
 
